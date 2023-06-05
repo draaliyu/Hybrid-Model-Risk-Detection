@@ -1,5 +1,5 @@
 
-#Hybrid Classification Model
+# Hybrid Model for weather prediction
 
 This Python script builds, trains, and evaluates a hybrid model using several classifiers from the sklearn library, including a Decision Tree Classifier, Random Forest Classifier, Logistic Regression model, and Support Vector Classifier (SVC).
 Dependencies
@@ -16,7 +16,7 @@ You can install all dependencies using the following command:
 pip install pandas scikit-learn seaborn matplotlib numpy scipy
 
 
-#Usage
+# Usage
 
 Prepare your training and testing datasets in CSV format. The dataset should include the columns for the features you're interested in and a label column for the target variable. This script is currently configured for a multi-class problem with seven classes, but you can adjust this to suit your needs.
 
@@ -36,6 +36,6 @@ The script will save multiple plots to a folder named results in your current di
 Make sure the results folder exists in your current directory, or modify the script to save the results elsewhere.
 
 
-#Note
+# Note
 
 This script is currently configured to handle a multi-class classification problem with seven classes, named NR (No Risk), MinR (Minimal Risk), LR (Low Risk), ModR (Moderate Risk), HR (High Risk), SR (Severe Risk), and ER (Extreme Risk). If you have a different number of classes or different class names, you will need to adjust the class_ranges variable in the print_and_plot_model_performance function, as well as the color mappings in the hybrid_model function.
